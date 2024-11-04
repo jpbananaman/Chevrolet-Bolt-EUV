@@ -3,6 +3,10 @@
   "signals": [
     {"id": "BOLT_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
   ]},
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "45F9"}, "freq": 3600,
+  "signals": [
+    {"id": "BOLT_HVBAT_EST_CAP", "path": "Battery", "fmt": { "len": 8, "max": 70, "unit": "kWh" }, "name": "HV battery estimated capacity"}
+  ]},
 { "hdr": "7E4", "rax": "7EC", "cmd": {"22": "43A5"}, "freq": 3600,
   "signals": [
     {"id": "BOLT_HVBAT_CHRG_CNT", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "HV battery charge count"}
