@@ -5,7 +5,7 @@
   ]},
 { "hdr": "7E4", "rax": "7EC", "cmd": {"22": "45F9"}, "freq": 3600,
   "signals": [
-    {"id": "BOLT_HVBAT_EST_CAP", "path": "Battery", "fmt": { "len": 8, "max": 70, "mul": 0.0032, "unit": "kWh" }, "name": "HV battery estimated capacity"}
+    {"id": "BOLT_HVBAT_EST_CAP", "path": "Battery", "fmt": { "len": 8, "max": 250, "div": 100, "unit": "Ah" }, "name": "HV battery estimated capacity"}
   ]},
 { "hdr": "7E4", "rax": "7EC", "cmd": {"22": "43A5"}, "freq": 3600,
   "signals": [
