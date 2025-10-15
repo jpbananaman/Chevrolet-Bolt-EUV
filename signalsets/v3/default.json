@@ -3,6 +3,18 @@
   "signals": [
     {"id": "BOLT_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
   ]},
+{ "hdr": "", "rax": "", "cmd": {}, "freq": 0, "dbgfilter": {},
+    "signals": [
+      {"id": "INST_KPOWER", "path": "Power", "fmt": { "len": 32, "max": 200, "unit": "KW" }, "name": "Inst Kpower", "equation": "[222885]*[222414]/1000"}
+    ]},
+  { "hdr": "", "rax": "", "cmd": {}, "freq": 0, "dbgfilter": {},
+    "signals": [
+      {"id": "INST_W_KPH", "path": "Power", "fmt": { "len": 32, "max": 10000, "unit": "W/kph" }, "name": "Inst W/kph", "equation": "[222885]*[222414]/[22000D]"}
+    ]},
+  { "hdr": "", "rax": "", "cmd": {}, "freq": 0, "dbgfilter": {},
+    "signals": [
+      {"id": "INST_W_MPH", "path": "Power", "fmt": { "len": 32, "max": 10000, "unit": "W/mph" }, "name": "Inst W/mph", "equation": "[222885]*[222414]/([22000D]/1.61)"}
+    ]},
 { "hdr": "7E4", "rax": "7EC", "cmd": {"22": "434F"}, "freq": 5, "dbgfilter": { "from": 2024 },
   "signals": [
     {"id": "BOLT_HVBAT_TEMP", "path": "Battery", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "HV battery temperature"}
